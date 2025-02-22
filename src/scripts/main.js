@@ -26,9 +26,7 @@ const promise2 = new Promise((resolve, reject) => {
   }, 3000);
 });
 
-promise1
-  .then(() => showMessage('Promise was resolved!'))
-  .catch(() => showMessage('Promise was rejected!', true));
+promise1.then(() => showMessage('Promise was resolved!'));
 
 promise2
   .then(() => showMessage('Promise was resolved!'))
